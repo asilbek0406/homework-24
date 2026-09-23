@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BMW X6 M Competition configurator">
+    <title>BMW X6 M Competition — Configurator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BMW favicon / browser tab icon -->
+    <link rel="icon" type="image/png"
+        href="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/3840px-BMW.svg.png?utm_source=ru.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail">
+</head>
+
+<body>
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="header-left">
+                <button class="back-button" type="button" aria-label="Back">←</button>
+                <div class="bmw-mark" aria-label="BMW">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/3840px-BMW.svg.png?utm_source=ru.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
+                        alt="BMW logo">
+                </div>
+                <div class="model-meta">
+                    <h1>BMW X6 M Competition</h1>
+                    <button class="features-button" type="button">Standard features <span>↗</span></button>
+                </div>
+            </div>
+
+            <nav class="main-tabs" aria-label="Configurator sections">
+                <button class="tab is-active" data-tab="exterior" type="button">Exterior</button>
+                <button class="tab" data-tab="interior" type="button">Interior</button>
+            </nav>
+
+            <div class="header-actions">
+                <div class="header-price">
+                    <span>MSRP as built</span>
+                    <strong class="price" data-value="101500">$101,500</strong>
+                </div>
+                <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false">
+                    <span class="theme-icon">☼</span>
+                    <span class="theme-label">Dark</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="configurator">
+            <!-- EXTERIOR -->
+            <section class="config-panel is-active" id="exterior-panel">
+                <div class="visual-column">
+                    <div class="visual-topline">
+                        <span>01 / EXTERIOR</span>
+                        <span class="frame-counter">01 / 05</span>
+                    </div>
+
+                    <div class="car-stage" data-viewer="exterior">
+                        <div class="stage-grid"></div>
+                        <div class="stage-glow"></div>
+                        <div class="loading-spinner" aria-hidden="true"></div>
+                        <img class="car-image" src="images/exterior/blue/1.jpg"
+                            alt="BMW X6 M Competition in Marina Bay Blue Metallic">
+
+                        <button class="frame-arrow frame-arrow--prev" type="button"
+                            aria-label="Previous view">‹</button>
+                        <button class="frame-arrow frame-arrow--next" type="button" aria-label="Next view">›</button>
+
+                        <div class="rotate-hint">
+                            <span class="rotate-icon">↔</span>
+                            <span>SCROLL TO ROTATE</span>
+                        </div>
+                    </div>
+
+                    <div class="visual-caption">
+                        <div>
+                            <span class="caption-kicker">EXTERIOR COLOR</span>
+                            <h2 class="color-name">Marina Bay Blue Metallic</h2>
+                            <p class="color-description">Brilliant, vibrant colors with a metallic shine.</p>
+                        </div>
+                        <div class="visual-price">
+                            <span>MSRP as built</span>
+                            <strong class="price" data-value="101500">$101,500</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="options-card">
+                    <div class="card-heading">
+                        <div class="heading-row">
+                            <span class="section-number">01</span>
+                            <span class="section-total">/ 02</span>
+                        </div>
+                        <h2>Color</h2>
+                        <div class="heading-line"></div>
+                    </div>
+
+                    <div class="option-group">
+                        <div class="group-title">
+                            <span>Metallic</span>
+                            <span class="option-count">3</span>
+                        </div>
+                        <div class="options-list exterior-options"></div>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="quote-link" type="button">Get Your Quote <span>›</span></button>
+                        <button class="primary-action next-button" data-next="interior" type="button">Next: Interior
+                            <span>›</span></button>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- INTERIOR -->
+            <section class="config-panel" id="interior-panel">
+                <div class="visual-column">
+                    <div class="visual-topline">
+                        <span>02 / INTERIOR</span>
+                        <span>FIXED VIEW</span>
+                    </div>
+
+                    <div class="interior-stage" data-viewer="interior">
+                        <div class="stage-grid"></div>
+                        <div class="stage-glow"></div>
+                        <img class="interior-image" src="images/interior/1.jpg"
+                            alt="BMW X6 M Competition Black Merino Leather interior">
+                    </div>
+
+                    <div class="visual-caption">
+                        <div>
+                            <span class="caption-kicker">UPHOLSTERY</span>
+                            <h2 class="interior-name">Black Merino Leather</h2>
+                            <p class="interior-description">Soft Merino leather with refined craftsmanship.</p>
+                        </div>
+                        <div class="visual-price">
+                            <span>MSRP as built</span>
+                            <strong class="price" data-value="101500">$101,500</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="options-card">
+                    <div class="card-heading">
+                        <div class="heading-row">
+                            <span class="section-number">02</span>
+                            <span class="section-total">/ 02</span>
+                        </div>
+                        <h2>Upholstery</h2>
+                        <div class="heading-line heading-line--wide"></div>
+                    </div>
+
+                    <div class="option-group">
+                        <div class="group-title">
+                            <span>Merino Leather</span>
+                            <span class="option-count">5</span>
+                        </div>
+                        <div class="options-list interior-options"></div>
+                    </div>
+
+                    <div class="card-actions card-actions--single">
+                        <button class="primary-action quote-button" type="button">Get Your Quote <span>›</span></button>
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <div class="quote-modal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <section class="quote-dialog" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+            <button class="modal-close" type="button" aria-label="Close">×</button>
+            <span class="caption-kicker">YOUR BMW</span>
+            <h2 id="quote-title">BMW X6 M Competition</h2>
+
+            <div class="quote-details">
+                <div><span>Exterior</span><strong class="quote-exterior"></strong></div>
+                <div><span>Interior</span><strong class="quote-interior"></strong></div>
+                <div><span>Base price</span><strong class="quote-base"></strong></div>
+                <div><span>Options</span><strong class="quote-options"></strong></div>
+            </div>
+
+            <div class="quote-total">
+                <span>Total MSRP</span>
+                <strong class="quote-total-value"></strong>
+            </div>
+
+            <button class="modal-done" type="button">Done</button>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

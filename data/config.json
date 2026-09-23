@@ -1,0 +1,68 @@
+{
+  "basePrice": 100000,
+  "model": "BMW X6 M Competition",
+  "exteriorColors": [
+    {
+      "id": "blue",
+      "name": "Marina Bay Blue Metallic",
+      "price": 1500,
+      "hex": "#1b3a86",
+      "description": "Brilliant, vibrant colors with a metallic shine."
+    },
+    {
+      "id": "green",
+      "name": "Isle of Man Green Metallic",
+      "price": 2500,
+      "hex": "#0b5b43",
+      "description": "Deep racing green with a sophisticated metallic finish."
+    },
+    {
+      "id": "grey",
+      "name": "Brooklyn Grey Metallic",
+      "price": 0,
+      "hex": "#a1a5aa",
+      "description": "A timeless grey with a clean metallic character."
+    }
+  ],
+  "interiorOptions": [
+    {
+      "id": 1,
+      "name": "Black Merino Leather",
+      "price": 0,
+      "hex": "#171717",
+      "description": "Soft Merino leather with refined craftsmanship."
+    },
+    {
+      "id": 2,
+      "name": "Red Merino Leather",
+      "price": 800,
+      "hex": "#b14e3b",
+      "description": "A bold performance-inspired cabin with red leather."
+    },
+    {
+      "id": 3,
+      "name": "Orange Merino Leather",
+      "price": 1200,
+      "hex": "#9a5d28",
+      "description": "Warm orange accents bring extra character to the cabin."
+    },
+    {
+      "id": 4,
+      "name": "White Merino Leather",
+      "price": 1800,
+      "hex": "#e8e1d4",
+      "description": "Bright leather creates a clean, spacious atmosphere."
+    },
+    {
+      "id": 5,
+      "name": "Silverstone/Black Merino Leather",
+      "price": 2500,
+      "hex": "#bfc4c8",
+      "description": "A cool two-tone finish with unmistakable M character."
+    }
+  ],
+  "assets": {
+    "exteriorFrameCount": 5,
+    "interiorFrameCount": 5
+  }
+}
